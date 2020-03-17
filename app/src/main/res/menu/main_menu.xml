@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_product"
+        android:orderInCategory="1"
+        android:title="Товары" />
+
+    <item
+        android:id="@+id/action_user"
+        android:orderInCategory="2"
+        android:title="Пользователи" />
+
+    <item
+        android:id="@+id/action_supermarket"
+        android:orderInCategory="3"
+        android:title="Супермаркеты" />
+
+    <item
+        android:id="@+id/action_statistics"
+        android:orderInCategory="4"
+        android:title="Статистика" />
+
+    <item
+        android:id="@+id/action_cart"
+        android:orderInCategory="5"
+        android:title="Корзина" />
+
+    <item
+        android:id="@+id/login"
+        android:orderInCategory="6"
+        android:title="Вход/Выход" />
+
+    <item
+        android:id="@+id/instruction"
+        android:orderInCategory="7"
+        android:title="Помощь" />
+
+    <item
+        android:id="@+id/action_order"
+        android:orderInCategory="8"
+        android:title="Заказы" />
+
+</menu>

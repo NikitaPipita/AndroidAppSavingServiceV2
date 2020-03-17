@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticsActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="10">
+
+    <EditText
+        android:id="@+id/fromDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Начальная дата в формате YYYY-MM-DD" />
+
+    <EditText
+        android:id="@+id/toDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Конечная дата в формате YYYY-MM-DD" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Показать статистику"
+        android:onClick="showStatistic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/orderCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кол-во заказов:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/avgOrderSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Средняя сумма заказа:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/loginUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Активные пользователи:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кол-во комментариев:"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI_elements.FilterActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Категории"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"/>
+
+        <CheckBox
+            android:id="@+id/vine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вино"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/heightAlc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Крепкий алкоголь"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/liker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ликеры"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/beer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пиво"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/lowAlc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Слабоалкогольные напитки"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/champagne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Шампанское и игристое вино"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/energyDrinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Энергетические напитки"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сортировать цену по"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Без сортировки" />
+
+            <RadioButton
+                android:id="@+id/asc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="По возрастанию" />
+
+            <RadioButton
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="По убыванию" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить"
+        android:onClick="acceptFilter"/>
+
+</LinearLayout>

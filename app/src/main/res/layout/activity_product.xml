@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_elements.ProductActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="4">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Название"
+            android:lines="1"/>
+
+        <EditText
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Кол-во"/>
+
+        <EditText
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="url фото"
+            android:lines="1"/>
+
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Категория"/>
+
+        <LinearLayout
+            android:id="@+id/userContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/circle_linear_all_corners"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/userContentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название"
+                android:textSize="22sp"
+                android:background="@drawable/circle_linear_all_corners"/>
+
+            <TextView
+                android:id="@+id/userContentCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кол-во"
+                android:textSize="17sp"
+                android:background="@drawable/circle_linear_all_corners"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Записать"
+                android:onClick="save"/>
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Удалить"
+                android:onClick="delete"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addToSupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить товар в супермаркет"
+            android:onClick="addProdToSup"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="20"
+        android:layout_weight="6">
+
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Добавить в корзину"
+            android:layout_weight="2"
+            android:onClick="addToCart"/>
+
+        <ListView
+            android:id="@+id/supProdList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"/>
+
+        <Button
+            android:id="@+id/addCommentButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Добавить комментарий"
+            android:layout_weight="2"
+            android:onClick="addComment"/>
+
+        <ListView
+            android:id="@+id/commentList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
